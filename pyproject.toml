@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "twos_complement"
 version = "0.0.1"
-description = "Bit-packing and unpacking integer fields"
+description = "Interpreting integer bit patterns as two's complement or unsigned representation"
 authors = [
     { name="Simon Nieswand", email="simon.nieswand@gmail.com" }
 ]
