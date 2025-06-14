@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from twos_complement import to_signed, to_unsigned
+from twos import to_signed, to_unsigned
 
 bit_width = 8
 x = 170 # 0b10101010

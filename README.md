@@ -1,21 +1,21 @@
-# twos_complement
+# twos
 
 Converting between [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement) and unsigned integer interpretation (i.e. sum of powers of two) of integer bit patterns.
 
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/twos_complement?style=flat-square)
-![PyPI](https://img.shields.io/pypi/v/twos_complement?style=flat-square)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/twos?style=flat-square)
+![PyPI](https://img.shields.io/pypi/v/twos?style=flat-square)
 
 ## Installation
-`twos_complement` is available on pypi:
+`twos` is available on pypi:
 ```bash
-pip install twos_complement
+pip install twos
 ```
 
 ## Example
 Basic usage example (can be found in [examples/convert.py](examples/convert.py)):
 
 ```python
-from twos_complement import to_signed, to_unsigned
+from twos import to_signed, to_unsigned
 
 bit_width = 8
 x = 170 # 0b10101010
