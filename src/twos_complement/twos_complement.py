@@ -1,7 +1,7 @@
 def to_signed(value: int, bit_width: int) -> int:
     """Convert an unsigned integer `value` to a signed integer by interpreting
-    its bit pattern as a two's complement representation with the specified
-    `bit_width`.
+    its internal bit pattern as a two's complement representation with the
+    specified `bit_width`.
 
     Args:
         value (int): The unsigned integer to convert (e.g., from 0 to 255 for a
@@ -27,13 +27,14 @@ def to_signed(value: int, bit_width: int) -> int:
 def to_unsigned(value: int, bit_width) -> int:
     """Convert a signed integer `value` to an unsigned integer by interpreting
     its bit pattern as an unsigned integer representation (i.e. sum of powers of
-    two) with the specified `bid_width`.
+    two) with the specified `bit_width`.
 
     Args:
         value (int): The signed integer to convert (e.g., from -128 to 127 for a
             bit width of 8).
         bit_width (int): The bit width used for the unsigned integer
-            representation (to prune leading ones for negative inputs).
+            representation. Leading ones of negative inputs will be considered
+            up to the bit width.
 
     Returns:
         int: The unsigned integer representation (e.g., from 0 to 255 for a
